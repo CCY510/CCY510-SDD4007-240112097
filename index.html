@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="lang-toggle" onclick="toggleLanguage()">
+        <span class="en">Switch to Traditional Chinese</span>
+        <span class="zh">切換至英文</span>
+    </button>
+
+    <section id="introduction" class="fade-in">
+        <div class="container">
+            <h1 class="en">Hello, I'm CHIU CHING Yi</h1>
+            <h1 class="zh">您好，我是趙靜怡</h1>
+            <p class="en">I graduated from the Hong Kong Institute of Information Technology with an Advanced Diploma in Cloud and Data Centre Administration. I enjoy learning through hands-on experience, which helps me understand and apply skills more effectively. I possess excellent communication and problem-solving skills and can adapt flexibly to rapidly changing environments. I interned in a data center, learning daily operations and equipment operation. I also worked in the service industry, which helped me understand customer needs and improve my communication skills. I am friendly, proactive, responsible, and excel in teamwork.</p>
+            <p class="zh">我畢業於香港資訊科技學院，取得雲端及資料中心管理高級文憑。我喜歡透過實踐學習，這有助於我更有效地理解和運用技能。我擁有出色的溝通和解決問題的能力，並且能夠靈活適應快速變化的環境。我曾在資料中心實習，學習日常營運和設備操作。我也曾在服務業工作，這幫助我了解客戶需求並提升溝通技巧。我個性友善、積極主動、認真負責，並且擅長團隊合作。</p>
+        </div>
+        <div class="hero-accent-shape"></div> 
+    </section>
+
+    <section id="education" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Education</h2>
+                <h2 class="zh">教育背景</h2>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="en">Higher Diploma in Cloud and Data Centre</h3>
+                    <h3 class="zh">雲端與數據中心高級文憑</h3>
+                    <p class="en">Hong Kong Institute of Information Technology | 2024 - 2026</p>
+                    <p class="zh">香港資訊科技學院 | 2024 - 2026</p>
+                    <p class="en">Relevant Coursework: Practical skills and knowledge in cloud and center management, with an emphasis on network design and Implementation, cloud applications, and management of virtualized systems and data centers.</p>
+                    <p class="zh">相關課程: 雲端與數據中心管理的實用技能和知識，重點是網絡設計與實施、雲端應用程序以及虛擬化系統與數據中心管理。</p>
+                </div>
+                <div class="card">
+                    <h3 class="en">Diploma of Foundation Studies</h3>
+                    <h3 class="zh">基礎學科文憑</h3>
+                    <p class="en">Hong Kong Institute of Vocational Education (Tsing Yi) | 2023 - 2024</p>
+                    <p class="zh">香港專業教育學院 (青衣) | 2023 - 2024</p>
+                    <p class="en">Relevant Coursework: Basic programming, database applications, computer systems and communications, multimedia web design.</p>
+                    <p class="zh">相關課程: 基礎編程、數據庫應用、電腦系統和通信、多媒體網頁設計。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="hobbies" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Interests & Hobbies</h2>
+                <h2 class="zh">興趣與嗜好</h2>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fas fa-palette skill-icon"></i>
+                    <h3 class="en">Drawing</h3>
+                    <h3 class="zh">繪畫</h3>
+                    <p class="en">Drawing enhances my creativity and attention to detail, skills which are crucial for network diagramming and complex system architecture design.</p>
+                    <p class="zh">繪畫培養了我的創造力與對細節的專注力，這些技能對於網絡圖和複雜系統架構的設計至關重要。</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cube skill-icon"></i>
+                    <h3 class="en">3D Modeling</h3>
+                    <h3 class="zh">3D 模型製作</h3>
+                    <p class="en">Creating 3D models sharpens my ability for spatial reasoning and logical structuring, directly applicable to visualizing and managing physical data center layouts and rack space optimization.</p>
+                    <p class="zh">製作 3D 模型磨練了我的空間推理和邏輯結構化能力，這可以直接應用於可視化和管理實體數據中心的佈局和機架空間優化。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Skills Showcase</h2>
+                <h2 class="zh">技能展示</h2>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3 class="en">Backend & Scripting</h3>
+                    <h3 class="zh">後端與腳本</h3>
+                    <p>Python, Linux, SQL (MySQL, SQL*Plus)</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-desktop skill-icon"></i>
+                    <h3 class="en">Frontend & Web Dev</h3>
+                    <h3 class="zh">前端與網站開發</h3>
+                    <p>HTML, CSS, JavaScript, Website Development</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <h3 class="en">Cloud & Operations</h3>
+                    <h3 class="zh">雲端與運維</h3>
+                    <p>Cloud Computing (AWS), Github, Linux</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-paint-brush skill-icon"></i>
+                    <h3 class="en">Design & Tools</h3>
+                    <h3 class="zh">設計與工具</h3>
+                    <p>3D-modeling (Nomad), Microsoft Office</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Featured Projects</h2>
+                <h2 class="zh">精選項目</h2>
+            </div>
+           
+            <div class="main-carousel" data-flickity='{ "wrapAround": true, "autoPlay": 3500, "groupCells": true }'>
+                <div class="carousel-cell">
+                    <h3 class="en">Are you Safety? (Network Security Project)</h3>
+                    <h3 class="zh">您安全嗎？(網絡安全項目)</h3>
+                    <p class="en">Designed a network security project from scratch. Included design, plan, division of labor, and implementation.</p>
+                    <p class="zh">從零開始設計了一個網絡安全項目。包括設計、規劃、分工和實施。</p>
+                    <p class="tech-focus">_Focus: Network security, Design, Implementation_</p>
+                </div>
+                <div class="carousel-cell">
+                    <h3 class="en">Flask Reverse Engineering of Apple Website</h3>
+                    <h3 class="zh">Flask 逆向工程 Apple 網站</h3>
+                    <p class="en">Used Flask and Python as the backend, PostgreSQL as the database system, and ORM tools to handle the database work. Successfully reverse engineered Apple's website.</p>
+                    <p class="zh">描述：： 使用 Flask 和 Python 作為後端，PostgreSQL 作為數據庫系統，並使用 ORM 工具進行數據庫工作，逆向工程了 Apple 網站。</p>
+                    <p class="tech-focus">_Technologies: Flask, Python, PostgreSQL, ORM_</p>
+                </div>
+                <div class="carousel-cell">
+                    <h3 class="en">Multimedia Website and Application Design</h3>
+                    <h3 class="zh">多媒體網站與應用設計</h3>
+                    <p class="en">Designed and built a PC game using Unity, created a website to introduce the game content and collect user feedback, created a PowerPoint presentation, and made a final report.</p>
+                    <p class="zh">設計並使用 Unity 構建了一個 PC 遊戲，創建了一個網站以介紹遊戲內容並收集用戶反饋，製作了一個 PowerPoint 演示文稿，並完成了一份最終報告。</p>
+                    <p class="tech-focus">_Technologies: Unity, Website Development_</p>
+                </div>
+                <div class="carousel-cell">
+                    <h3 class="en">Cloud System Operations Project</h3>
+                    <h3 class="zh">雲系統運維項目</h3>
+                    <p class="en">Designed the system VPC network according to the situation. Selected and implemented appropriate AWS services and software for the designed network. Included reporting and document processing.</p>
+                    <p class="zh">根據情況設計了系統 VPC 網絡。為設計的網絡選擇並實施了適當的 AWS 服務和軟件。包括報告和文檔處理。</p>
+                    <p class="tech-focus">_Technologies: AWS, VPC Network Design_</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Work Experience Timeline</h2>
+                <h2 class="zh">工作經驗時間線</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-content">
+                        <h3 class="en">Internship: Data Center Operations</h3>
+                        <h3 class="zh">實習: 數據中心運營</h3>
+                        <p><strong>Equinix IBX Customer Operations Data Center</strong> | [Start Date] - [End Date]</p>
+                        <ul class="en">
+                            <li>Provided technical support services, including data center operations and equipment maintenance.</li>
+                            <li>Assisted with service configuration and ensured smooth data center functionality.</li>
+                        </ul>
+                        <ul class="zh">
+                            <li>提供技術支援服務，包括數據中心運營和設備維護。</li>
+                            <li>協助服務配置，確保數據中心功能順暢。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <h3 class="en">Part-time Sales Associate</h3>
+                        <h3 class="zh">兼職店務員</h3>
+                        <p><strong>Dr. Kong</strong> | [Start Date] - [End Date]</p>
+                        <ul class="en">
+                            <li>Responsible for product sales.</li>
+                            <li>Managed daily shop operations, including goods display and warehouse organization.</li>
+                            <li>Provided high-quality customer service.</li>
+                        </ul>
+                        <ul class="zh">
+                            <li>負責產品銷售。</li>
+                            <li>日常店鋪運作 (包括貨品陳列, 倉存整理)。</li>
+                            <li>提供優質客戶服務。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Activities</h2>
+                <h2 class="zh">活動</h2>
+            </div>
+           
+            <div class="main-carousel" data-flickity='{ "wrapAround": true, "autoPlay": 3500 }'>
+               
+                <div class="carousel-cell">
+                    <h3 class="en">AWS UG HK BuilderCards Night</h3>
+                    <h3 class="zh">AWS UG HK BuilderCards 之夜</h3>
+                    <div class="image-placeholder">
+                        <img src="imags/bc_pitch1_1.png" alt="AWS UG HK BuilderCards Night">
+                    </div>
+                    <p class="en">Experienced the exclusive AWS BuilderCards strategy game, learned the basics of cloud systems, enhanced cloud architecture thinking, networked with experts, and made new friends!</p>
+                    <p class="zh">體驗專屬的 AWS BuilderCards 策略遊戲，學習雲系統的基礎知識，增強雲架構思維，與專家建立了聯繫，並結交了新朋友！</p>
+                </div>
+                <div class="carousel-cell">
+                    <h3 class="en">AWS Summit 2025</h3>
+                    <h3 class="zh">AWS 峰會 2025</h3>
+                    <div class="image-placeholder">
+                        <img src="imags/487949514_1118952113577691_4429683756961800929_n.jpg" alt="AWS Summit 2025">
+                    </div>
+                    <p class="en">Provides interactive learning, showcases real-world AI applications, and the AWS Industry Pavilion. Participants can engage with experts and explore innovative new startups, with over 60 sessions providing insights to advance their expertise.</p>
+                    <p class="zh">提供了互動式學習，展示了真實世界的 AI 應用程序和 AWS 行業展區。參與者可以與專家交流並探索創新的新創企業，有超過 60 場會議提供見解以提升他們的專業知識。</p>
+                </div>
+                <div class="carousel-cell">
+                    <h3 class="en">Google Cloud AI Agents: Live + Labs HK</h3>
+                    <h3 class="zh">Google Cloud AI Agents: Live + Labs HK</h3>
+                    <div class="image-placeholder">
+                        <img src="imags/538084362_1386953006764009_8683357973761643779_n.jpg" alt="Google Cloud AI Agents Event">
+                    </div>
+                    <p class="en">Assisting at this event gave me a deeper understanding of the latest AI agent technologies and industry trends. I learned a lot about Agent Developer Kits (ADKs) and how to use them to build innovative projects.</p>
+                    <p class="zh">協助參加此活動讓我對最新的 AI 代理技術和行業趨勢有了更深入的了解。我學習了大量關於代理開發工具包 (ADK) 的知識，以及如何使用它們來構建創新項目。</p>
+                </div>
+                <div class="carousel-cell">
+                    <h3 class="en">Google Cloud Summit HK</h3>
+                    <h3 class="zh">Google Cloud Summit HK</h3>
+                    <div class="image-placeholder">
+                        <img src="imags/assets.gif" alt="Google Cloud Summit HK">
+                    </div>
+                    <p class="en">Staffed to assist participants in completing cloud-related tests.</p>
+                    <p class="zh">擔任工作人員協助參與者完成雲相關測試。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="career-plan" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Career Goal & Plan</h2>
+                <h2 class="zh">職業目標與規劃</h2>
+            </div>
+            <h3 class="en sub-header">Data Center Manager: Leading the Core of Digital Infrastructure</h3>
+            <h3 class="zh sub-header">數據中心經理：領航數位基礎設施的核心</h3>
+           
+            <div class="career-goal">
+                <h4 class="en">My Value Proposition</h4>
+                <h4 class="zh">我的價值主張</h4>
+                <p class="en career-motivation">
+                    My ultimate professional goal is to become a Data Center Manager, a role where I can transition from technical operation to strategic leadership. My background in Cloud and Data Centre studies, coupled with practical experience from the Equinix internship, provides a solid foundation in maintaining high-availability infrastructure. I am not just proficient in troubleshooting; I bring a mindset focused on operational excellence, resource efficiency (PUE/WUE), and proactive risk management. My ability to visualize complex systems (honed by 3D modeling) and structure detailed plans (learned through drawing and project work) directly translates to optimizing physical and virtual data center layouts and enhancing disaster recovery protocols. I am committed to leading an efficient, safety-compliant team that delivers exceptional SLA performance, ensuring the data center is not merely a facility but a strategic asset for business continuity and growth.
+                </p>
+                <p class="zh career-motivation">
+                    我最終的職業目標是成為一名數據中心經理，在這個崗位上，我可以從技術運營轉向戰略領導。我在雲端與數據中心方面的學習背景，加上在 Equinix 實習所獲得的實踐經驗，為維護高可用性基礎設施奠定了堅實的基礎。我不僅擅長故障排除，我還帶來一種專注於卓越運營、資源效率 (PUE/WUE) 和主動風險管理的思維模式。我的能力，例如可視化複雜系統（通過 3D 建模磨練）和結構化詳細計劃（通過繪畫和項目工作學習），可以直接應用於優化物理和虛擬數據中心的佈局，並加強災難恢復協議。我致力於領導一個高效、遵守安全規範的團隊，提供卓越的 SLA 性能，確保數據中心不僅是一個設施，更是業務連續性和增長的戰略資產。
+                </p>
+            </div>
+           
+            <div class="goal-plan-grid">
+               
+                <div class="career-plan">
+                    <h4 class="en">Steps to Reach Goal (Action Plan)</h4>
+                    <h4 class="zh">達成目標的步驟 (行動清單)</h4>
+                    <ul class="en">
+                        <li>Year 1-2 (Entry-Level/Technician): Solidify L2/L3 support skills. Complete CDCP (Certified Data Centre Professional) certification. Seek opportunities to lead small internal infrastructure upgrade projects.</li>
+                        <li>Year 3-5 (Senior Engineer/Supervisor): Achieve ITIL 4 Foundation or ITIL Expert certification to master service management frameworks. Focus on learning DCIM (Data Center Infrastructure Management) tools for reporting and efficiency analysis.</li>
+                        <li>Year 5+ (Managerial Focus): Obtain PMP (Project Management Professional) or equivalent management certification. Actively participate in budget planning and vendor negotiation processes.</li>
+                        <li>Networking & Development: Regularly attend industry conferences (e.g., DCD Events) and join professional bodies like the Infrastructure Masons to expand domain knowledge and leadership connections.</li>
+                    </ul>
+                    <ul class="zh">
+                        <li>第 1-2 年 (初級/技術人員): 鞏固 L2/L3 支援技能。完成 CDCP（註冊數據中心專業人員）認證。尋求機會領導小型內部基礎設施升級項目。</li>
+                        <li>第 3-5 年 (高級工程師/主管): 考取 ITIL 4 Foundation 或 ITIL Expert 認證，以掌握服務管理框架。專注於學習 DCIM（數據中心基礎設施管理）工具，以進行報告和效率分析。</li>
+                        <li>第 5 年以上 (管理重點): 獲得 PMP（項目管理專業人士）或同等管理認證。積極參與預算規劃和供應商談判過程。</li>
+                        <li>人脈建立與發展: 定期參加行業會議（例如：DCD Events）並加入專業機構，如 Infrastructure Masons，以擴展領域知識和領導力人脈。</li>
+                    </ul>
+                </div>
+               
+                <div class="career-plan">
+                    <h4 class="en">Necessary Skills to Learn & Plan</h4>
+                    <h4 class="zh">需學習的技能與計劃</h4>
+                    <ul class="en">
+                        <li>Advanced Network & Security: Master BGP, OSPF, and advanced firewall policies. *Plan: Complete a Cisco Certified Network Professional (CCNP) course within 2 years.*</li>
+                        <li>Data Center Infrastructure Management (DCIM): Hands-on experience with commercial DCIM tools (e.g., Schneider Electric EcoStruxure, Nlyte) for capacity planning and energy efficiency (PUE) monitoring. *Plan: Complete 3 DCIM vendor-specific training modules within 18 months.*</li>
+                        <li>HVAC, Power, and Critical Systems: Deepen knowledge of UPS, generators, cooling methodologies (e.g., liquid cooling trends), and facility maintenance best practices. *Plan: Audit 2 relevant facilities management courses within the next year.*</li>
+                        <li>IT Service Management (ITSM): Apply the ITIL framework to standardize incident, change, and capacity management. *Plan: ITIL 4 Foundation certification within 1 year.*</li>
+                    </ul>
+                    <ul class="zh">
+                        <li>高級網絡與安全: 掌握 BGP、OSPF 和高級防火牆策略。*計劃: 在 2 年內完成 Cisco 認證網絡專業人員 (CCNP) 課程。*</li>
+                        <li>數據中心基礎設施管理 (DCIM): 掌握商業 DCIM 工具（例如：Schneider Electric EcoStruxure、Nlyte）的實戰經驗，用於容量規劃和能源效率 (PUE) 監控。*計劃: 在 18 個月內完成 3 個 DCIM 供應商專門的培訓模塊。*</li>
+                        <li>暖通空調、電力和關鍵系統: 深化對 UPS、發電機、冷卻方法（例如：液體冷卻趨勢）和設施維護最佳實踐的知識。*計劃: 在未來一年內旁聽 2 門相關的設施管理課程。*</li>
+                        <li>IT 服務管理 (ITSM): 應用 ITIL 框架來標準化事件、變更和容量管理。*計劃: 在 1 年內考取 ITIL 4 Foundation 認證。*</li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Certifications</h2>
+                <h2 class="zh">認證</h2>
+            </div>
+            <div class="cert-group-container">
+                
+                <div class="cert-group aws-group">
+                    <button class="toggle-btn group-toggle-btn" data-target="aws-certs" onclick="toggleCerts(this)">
+                        <h3 class="en">AWS Certifications & Badges (8 items) <i class="fas fa-chevron-down"></i></h3>
+                        <h3 class="zh">AWS 認證與徽章 (共 8 項) <i class="fas fa-chevron-down"></i></h3>
+                    </button>
+                    <div class="card-grid cert-list" id="aws-certs"> 
+                        <div class="card">
+                            <h3 class="en">AWS Credly Profile/Badge</h3>
+                            <h3 class="zh">AWS Credly 檔案/徽章</h3>
+                            <p class="en">View my achievements on Credly: <a href="https://www.credly.com/earner/earned/badge/cfdf7937-98ab-41dd-a96e-aa705894ba78" target="_blank">View Credly Badge</a></p>
+                            <p class="zh">在 Credly 上查看我的成就: <a href="https://www.credly.com/earner/earned/badge/cfdf7937-98ab-41dd-a96e-aa705894ba78" target="_blank">查看 Credly 徽章</a></p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">AWS Academy Graduate - AWS Academy Cloud Architecting</h3>
+                            <h3 class="zh">AWS 學院畢業生 - AWS 學院雲架構</h3>
+                            <p>Issued by Amazon Web Services (AWS) | [Date]</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">AWS Academy Graduate - AWS Academy Cloud Foundations</h3>
+                            <h3 class="zh">AWS 學院畢業生 - AWS 學院雲基礎</h3>
+                            <p>Issued by Amazon Web Services (AWS) | [Date]</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">AWS Academy Graduate - Cloud Developing - Training Badge</h3>
+                            <h3 class="zh">AWS 學院畢業生 - 雲開發 - 培訓徽章</h3>
+                            <p>Issued by Amazon Web Services (AWS) | Sep 13, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">AWS Academy Graduate - Cloud Operations - Training Badge</h3>
+                            <h3 class="zh">AWS 學院畢業生 - 雲運營 - 培訓徽章</h3>
+                            <p>Issued by Amazon Web Services (AWS) | Jul 4, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">AWS Academy Graduate - Cloud Architecting - Training Badge</h3>
+                            <h3 class="zh">AWS 學院畢業生 - 雲架構 - 培訓徽章</h3>
+                            <p>Issued by Amazon Web Services (AWS) | Mar 21, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">AWS Academy Graduate - Cloud Foundations - Training Badge</h3>
+                            <h3 class="zh">AWS 學院畢業生 - 雲基礎 - 培訓徽章</h3>
+                            <p>Issued by Amazon Web Services (AWS) | Mar 17, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">AWSome Day</h3>
+                            <h3 class="zh">AWSome Day</h3>
+                            <p>Issued by Amazon Web Services (AWS) | [Date]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-group google-group">
+                    <button class="toggle-btn group-toggle-btn" data-target="google-certs" onclick="toggleCerts(this)">
+                        <h3 class="en">Google Certifications & Badges (8 items) <i class="fas fa-chevron-down"></i></h3>
+                        <h3 class="zh">Google 認證與徽章 (共 8 項) <i class="fas fa-chevron-down"></i></h3>
+                    </button>
+                    <div class="card-grid cert-list" id="google-certs">
+                        <div class="card">
+                            <h3 class="en">Google SkillsBoost Public Profile</h3>
+                            <h3 class="zh">Google SkillsBoost 公開檔案</h3>
+                            <p class="en">View my Google Cloud achievements: <a href="https://www.skills.google/public_profiles/2c8be30a-04bb-4ab4-ba83-cf3d1f4cc143" target="_blank">View Google Profile</a></p>
+                            <p class="zh">查看我的 Google Cloud 成就: <a href="https://www.skills.google/public_profiles/2c8be30a-04bb-4ab4-ba83-cf3d1f4cc143" target="_blank">查看 Google 檔案</a></p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">Build Infrastructure with Terraform on Google Cloud (SKILL BADGE)</h3>
+                            <h3 class="zh">在 Google Cloud 上使用 Terraform 構建基礎設施 (技能徽章)</h3>
+                            <p>Issued by Google Cloud | Earned Nov 22, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">Logging and Monitoring in Google Cloud (COMPLETION BADGE)</h3>
+                            <h3 class="zh">在 Google Cloud 中進行日誌記錄和監控 (完成徽章)</h3>
+                            <p>Issued by Google Cloud | Earned Nov 24, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">Essential Google Cloud Infrastructure: Core Services (COMPLETION BADGE)</h3>
+                            <h3 class="zh">基本 Google Cloud 基礎設施: 核心服務 (完成徽章)</h3>
+                            <p>Issued by Google Cloud | Earned Nov 23, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">Essential Google Cloud Infrastructure: Foundation (COMPLETION BADGE)</h3>
+                            <h3 class="zh">基本 Google Cloud 基礎設施: 基礎 (完成徽章)</h3>
+                            <p>Issued by Google Cloud | Earned Nov 21, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">Google Cloud Fundamentals: Core Infrastructure (COMPLETION BADGE)</h3>
+                            <h3 class="zh">Google Cloud 基礎知識: 核心基礎設施 (完成徽章)</h3>
+                            <p>Issued by Google Cloud | Earned Nov 21, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">Getting Started with Google Kubernetes Engine (COMPLETION BADGE)</h3>
+                            <h3 class="zh">Google Kubernetes Engine 入門 (完成徽章)</h3>
+                            <p>Issued by Google Cloud | Earned Nov 21, 2025</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="en">Optimize Costs for Google Kubernetes Engine (SKILL BADGE)</h3>
+                            <h3 class="zh">優化 Google Kubernetes Engine 的費用 (技能徽章)</h3>
+                            <p>Issued by Google Cloud | Earned Nov 5, 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-group other-group">
+                    <button class="toggle-btn group-toggle-btn" data-target="other-certs" onclick="toggleCerts(this)">
+                        <h3 class="en">Other Certifications & Badges (1 item) <i class="fas fa-chevron-down"></i></h3>
+                        <h3 class="zh">其他認證與徽章 (共 1 項) <i class="fas fa-chevron-down"></i></h3>
+                    </button>
+                    <div class="card-grid cert-list" id="other-certs">
+                        <div class="card">
+                            <h3 class="en">Global AI Bootcamp 2025 - Hong Kong - Attendee</h3>
+                            <h3 class="zh">2025 全球 AI 訓練營 - 香港 - 參加者</h3>
+                            <p>Issued by Global AI Community | [Date]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Contact Information</h2>
+                <h2 class="zh">聯繫方式</h2>
+            </div>
+            <div class="card-grid">
+                <a href="tel:+85254095264" class="card contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <h4 class="en">Phone</h4>
+                    <h4 class="zh">電話</h4>
+                    <p>(852) 5409 - 5264</p>
+                </a>
+                <a href="mailto:chiuchingyiyi@gmail.com" class="card contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h4 class="en">Email</h4>
+                    <h4 class="zh">電子郵件</h4>
+                    <p>chiuchingyiyi@gmail.com</p>
+                </a>
+                <div class="card contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <h4 class="en">Location</h4>
+                    <h4 class="zh">位置</h4>
+                    <p>Kwai Tsing</p>
+                </div>
+                <a href="https://www.linkedin.com/in/chiuchingyi0510/" target="_blank" class="card contact-item">
+                    <i class="fas fa-globe contact-icon"></i>
+                    <h4 class="en">LinkedIn</h4>
+                    <h4 class="zh">領英</h4>
+                    <p>linkedin.com/in/chiuchingyiyi0510</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
