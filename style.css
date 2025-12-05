@@ -72,9 +72,7 @@
         opacity: 0.3;
     }
     .image-placeholder {
-        /* Dark Mode Placeholder Adjustment */
-        background-color: var(--color-background-mid);
-        border: 2px dashed rgba(255, 255, 255, 0.4);
+        background-color: var(--color-background-light);
     }
 }
 
@@ -315,23 +313,17 @@ p.tech-focus {
     overflow: hidden;
 }
 
-/* --- Activities - Optimized Image Placeholder (新增樣式) --- */
 .image-placeholder {
     margin: 25px auto 40px;
     max-width: 550px;
     height: 250px; 
-    background-color: var(--color-background-mid); 
-    
-    /* 增加漸變色和虛線邊框，提高視覺密度 */
-    background-image: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 10%, rgba(0, 199, 255, 0.05) 100%);
-    border: 2px dashed rgba(0, 122, 255, 0.3); 
-    
+    background-color: var(--color-background-light);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-text-medium);
     border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 .image-placeholder img {
